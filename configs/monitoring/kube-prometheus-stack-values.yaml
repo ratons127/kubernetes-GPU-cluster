@@ -1,0 +1,39 @@
+grafana:
+  adminPassword: "REPLACE_WITH_STRONG_PASSWORD"
+  service:
+    type: NodePort
+    nodePort: 32000
+  persistence:
+    enabled: true
+    storageClassName: local-path
+    size: 20Gi
+  defaultDashboardsTimezone: browser
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: local-path
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 50Gi
+alertmanager:
+  alertmanagerSpec:
+    storage:
+      volumeClaimTemplate:
+        spec:
+          storageClassName: local-path
+          accessModes: ["ReadWriteOnce"]
+          resources:
+            requests:
+              storage: 10Gi
+kubeEtcd:
+  enabled: true
+kubeScheduler:
+  enabled: true
+kubeControllerManager:
+  enabled: true
+kubeProxy:
+  enabled: true
+
