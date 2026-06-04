@@ -1,0 +1,10 @@
+[plugins."io.containerd.cri.v1.runtime".containerd]
+  default_runtime_name = "nvidia"
+
+[plugins."io.containerd.cri.v1.runtime".containerd.runtimes.nvidia]
+  runtime_type = "io.containerd.runc.v2"
+  sandboxer = "podsandbox"
+
+[plugins."io.containerd.cri.v1.runtime".containerd.runtimes.nvidia.options]
+  BinaryName = "/usr/bin/nvidia-container-runtime"
+  SystemdCgroup = true

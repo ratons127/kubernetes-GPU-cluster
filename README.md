@@ -29,6 +29,7 @@ The live cluster documented here was built on `gpu-node01` with public IP `103.1
 - [docs/03-operations.md](docs/03-operations.md): day-2 operations and client lifecycle
 - [docs/04-monitoring.md](docs/04-monitoring.md): monitoring stack and validation
 - [docs/05-troubleshooting.md](docs/05-troubleshooting.md): practical fault guide
+- [docs/06-server-configuration.md](docs/06-server-configuration.md): exact RHEL host configuration and commands
 - [configs/](configs): sanitized manifests and helper scripts
 
 ## Architecture diagram
