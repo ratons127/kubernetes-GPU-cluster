@@ -31,6 +31,10 @@ The live cluster documented here was built on `gpu-node01` with public IP `103.1
 - [docs/05-troubleshooting.md](docs/05-troubleshooting.md): practical fault guide
 - [configs/](configs): sanitized manifests and helper scripts
 
+## Architecture diagram
+
+![Single-Node Kubernetes GPU Cluster Architecture](docs/images/architecture.png)
+
 ## Architecture summary
 
 ```text
@@ -87,4 +91,3 @@ The runbook in this repository is not generic Ubuntu guidance. It reflects the a
 - one namespace per client
 - one PVC per client
 - one full Tesla P40 per client workspace
-
