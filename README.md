@@ -30,6 +30,7 @@ The live cluster documented here was built on `gpu-node01` with public IP `103.1
 - [docs/04-monitoring.md](docs/04-monitoring.md): monitoring stack and validation
 - [docs/05-troubleshooting.md](docs/05-troubleshooting.md): practical fault guide
 - [docs/06-server-configuration.md](docs/06-server-configuration.md): exact RHEL host configuration and commands
+- [docs/07-gpu-time-slicing.md](docs/07-gpu-time-slicing.md): NVIDIA device plugin time-slicing configuration
 - [configs/](configs): sanitized manifests and helper scripts
 
 ## Architecture diagram

@@ -1,0 +1,20 @@
+config:
+  map:
+    default: |-
+      version: v1
+      flags:
+        migStrategy: none
+        failOnInitError: true
+        deviceDiscoveryStrategy: nvml
+      sharing:
+        timeSlicing:
+          renameByDefault: false
+          failRequestsGreaterThanOne: true
+          resources:
+            - name: nvidia.com/gpu
+              replicas: 4
+  default: default
+gfd:
+  enabled: false
+migStrategy: none
+deviceDiscoveryStrategy: nvml
